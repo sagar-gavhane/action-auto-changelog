@@ -9,8 +9,8 @@ INPUT_DIRECTORY=${INPUT_DIRECTORY:-'.'}
 _FORCE_OPTION=''
 REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
-git config --global user.email "me@ahmadawais.com"
-git config --global user.name "Ahmad Awais"
+git config --global user.email ${INPUT_USER_NAME}
+git config --global user.name ${INPUT_USER_EMAIL}
 
 echo "❯ Generate changelog:";
 npx auto-changelog --package --unreleased --output 'changelog.md' --commit-limit 'false'
