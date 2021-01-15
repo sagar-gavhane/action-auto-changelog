@@ -30,11 +30,9 @@ inputs:
     user_name:
         description: 'Determine name of git committer'
         required: false
-        default: 'Ahmad Awais'
     user_email:
         description: 'Determine email of git committer'
         required: false
-        default: 'me@ahmadawais.com'
 branding:
     icon: 'shuffle'
     color: 'green'
